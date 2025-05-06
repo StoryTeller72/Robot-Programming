@@ -14,7 +14,7 @@ import random
 
 current_time = datetime.datetime.now()
 writer = SummaryWriter("/home/rustam/PR/project/Reacher/runs")
-directory_name = f"/home/rustam/PR/project/Reacher/DDPG_checkpoints/{current_time}"
+directory_name = f"chekpoints/sparse_reward/DDPG_checkpoints/{current_time}"
 os.makedirs(directory_name)
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
