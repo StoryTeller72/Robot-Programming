@@ -3,6 +3,9 @@
 Reacher» — это двухзвенная роботизированная рука. 
 Цель — переместить endeffector близко к цели (красная точка), которая появляется в случайном месте.
 ![Alt Text](https://gymnasium.farama.org/_images/reacher.gif)
+
+
+
 Цели проекта:
 - Изучить алгоритм Deep Deterministic Policy Gradients (DDPG)
 - Реализовать алгоритм DDPG на языке Python
@@ -23,4 +26,12 @@ conda create --name reacher --file requirements.txt
 - sucsess_rate: содержит данные о результатах обучения
 - train: код для обучения агента в разных средах
 - utils: вспомогательный код, в том числе модель DDPG
+- result_gif: содержит гиф файлы показывающие работу агента
 
+# Результаты обучения
+В одной эпохе 100 эпизодов длинной 50 кадров.
+<image src="results.png" alt="Результаты обучения моделей" width="500" height="300">
+
+
+Результат работы агента в среде с бинарной наградой. 
+<image src="result_gif/her_0_02.gif" width="500" height="500">
